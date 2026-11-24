@@ -1,0 +1,19 @@
+
+# Ambiente virtual
+venv/
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Banco de dados gerado
+dados/*.duckdb
+dados/*.wal
+
+# Arquivos temporários
+*.tmp
+.DS_Store
+
+# Configurações locais
+.env
