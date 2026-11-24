@@ -1,89 +1,132 @@
-# observatorio-climatico
+
 # Observatório Climático Local
 
 Projeto Integrador Extensionista 2 – Ciência de Dados
-Universidade de Marília (UNIMAR) · Prof. Luiz Henrique
+Universidade de Marília (UNIMAR)
 
-## Integrantes
-- Weslley Gonçalves Pinheiro Soares 
+## Integrante
+
+- Weslley Gonçalves Pinheiro Soares
 
 ## Público-alvo
-Estudantes e professores da comunidade escolar da localidade analisada.
 
-## Necessidade trabalhada
-Compreender as variações de temperatura e chuva ao longo do mês,
-para apoiar o planejamento de atividades ao ar livre e a conscientização
-sobre o clima local, usando dados que a comunidade consiga interpretar
-facilmente.
+Estudantes e professores da comunidade escolar de Caçapava (SP).
 
-## Problema investigado
-Como o clima se comportou na localidade nos últimos 30 dias, e que
-informações seriam úteis para o público escolhido?
+## Objetivo
 
-## Localidade e período
-- **Localidade:** Caçapava (SP)
-- **Período:** 30 dias consecutivos (de 20/10/2026 a 18/11/2026)
+Analisar o comportamento histórico da temperatura, precipitação e umidade relativa em Caçapava, contribuindo para o planejamento de atividades ao ar livre e para a conscientização sobre o clima local.
 
-## Recorte do projeto
-- Uma localidade e trinta dias consecutivos
-- Três variáveis meteorológicas: temperatura média diária (°C),
-  precipitação diária (mm) e umidade relativa média (%)
-- Uma tabela principal
-- Três perguntas analíticas
-- Três indicadores (KPIs) e dois gráficos
+## Fonte dos dados
 
-## Perguntas analíticas
-1. Qual foi a maior temperatura média diária registrada no período e em qual dia ocorreu?
-2. Quais foram os dias mais chuvosos?
-3. Existe relação entre a umidade e a precipitação?
+Open-Meteo Historical Weather API:
+https://open-meteo.com/en/docs/historical-weather-api
 
-## Indicadores (KPIs)
-- Temperatura média do período (°C)
-- Total de precipitação no período (mm)
-- Umidade média do período (%)
+Os dados são históricos e provenientes de modelos meteorológicos, não devendo ser apresentados como medições diretas de uma estação meteorológica local.
 
-## Gráficos
-- Tendência da temperatura média diária (linha)
-- Precipitação diária (barras)
+## Recorte
 
-## Ferramentas
-| Ferramenta | Responsabilidade |
-|---|---|
-| Open-Meteo API | Fonte dos dados meteorológicos |
-| Python + Requests | Coleta dos dados |
-| Pandas | Limpeza e organização dos dados |
-| DuckDB + SQL | Armazenamento e consultas analíticas |
-| Streamlit | Painel de visualização |
-| Git + GitHub | Versionamento e colaboração |
+- Localidade: Caçapava (SP).
+- Coordenadas: latitude -23.10 e longitude -45.71 (aproximadas).
+- Período: 30 dias consecutivos, conforme configurado em coleta.py.
+- Temperatura média diária (°C).
+- Precipitação diária acumulada (mm).
+- Umidade relativa média diária (%).
 
-## Estrutura do repositório
-projeto/
-├── README.md
+## Tecnologias
+
+- Python
+- Requests
+- pandas
+- DuckDB
+- SQL
+- Git e GitHub
+
+## Estrutura
+
+```text
+observatorio-climatico/
+├── coleta.py
+├── banco.py
+├── analisar.py
+├── consultas.sql
 ├── requirements.txt
+├── README.md
 ├── .gitignore
-├── coleta.py        # solicita dados à API Open-Meteo
-├── banco.py         # conexão e persistência (DuckDB)
-├── app.py           # painel Streamlit
-├── consultas.sql    # consultas SQL
 ├── dados/
+│   ├── brutos/
+│   ├── tratados/
+│   └── observatorio.duckdb
 └── docs/
+    └── escopo-1/
+        └── AE1/
+```
 
-## Instruções de execução
-1. Clone o repositório:
-   git clone https://github.com/Weslleygps/observatorio-climatico.git
-2. Crie e ative o ambiente virtual:
-   python -m venv .venv
-   .venv\Scripts\activate        (Windows)
-   source .venv/bin/activate     (Linux/Mac)
-3. Instale as dependências:
-   pip install -r requirements.txt
-4. Teste o ambiente:
-   python teste_ambiente.py
+## Preparação do ambiente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/Weslleygps/observatorio-climatico.git
+cd observatorio-climatico
+```
+
+Crie o ambiente virtual:
+
+```bash
+python -m venv .venv
+```
+
+Ative no Windows:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Instale as dependências:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Execução
+
+1. Configure as datas de 30 dias em coleta.py.
+2. Execute a coleta:
+
+```bash
+python coleta.py
+```
+
+3. Trate os dados e gere o banco:
+
+```bash
+python banco.py
+```
+
+4. Execute as análises:
+
+```bash
+python analisar.py
+```
+
+## Indicadores
+
+- Temperatura média do período (°C).
+- Precipitação acumulada no período (mm).
+- Umidade relativa média do período (%).
+
+## Limitações
+
+Os dados são provenientes de modelos meteorológicos históricos. Eles representam estimativas para a região e não necessariamente medições diretas em uma estação localizada no município.
+
+A análise descreve o período selecionado e não constitui previsão meteorológica.
 
 ## Status
-- [x] Ambiente configurado
-- [x] Repositório criado
-- [x] README inicial
-- [ ] Coleta de dados (Aula 2)
-- [ ] Banco de dados e consultas SQL
-- [ ] Painel e relatório final
+
+- [x] Ambiente configurado.
+- [x] Repositório GitHub criado.
+- [ ] Coleta de dados.
+- [ ] Tratamento e validação.
+- [ ] Banco DuckDB.
+- [ ] Consultas SQL e indicadores.
+- [ ] Relatório técnico.
