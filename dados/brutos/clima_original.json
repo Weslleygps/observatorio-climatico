@@ -10,11 +10,11 @@
         "temperature_unit": "celsius",
         "precipitation_unit": "mm"
     },
-    "data_coleta": "2026-11-24T20:21:29.200577",
+    "data_coleta": "2026-11-24T20:45:48.920360",
     "api_response": {
         "latitude": -23.093145,
         "longitude": -45.753143,
-        "generationtime_ms": 0.16736984252929688,
+        "generationtime_ms": 0.1518726348876953,
         "utc_offset_seconds": -10800,
         "timezone": "America/Sao_Paulo",
         "timezone_abbreviation": "GMT-3",
