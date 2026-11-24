@@ -70,7 +70,7 @@ projeto/
 
 ## Instruções de execução
 1. Clone o repositório:
-   git clone https://github.com/SEU-USUARIO/observatorio-climatico.git
+   git clone https://github.com/Weslleygps/observatorio-climatico.git
 2. Crie e ative o ambiente virtual:
    python -m venv .venv
    .venv\Scripts\activate        (Windows)
