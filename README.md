@@ -22,7 +22,7 @@ informações seriam úteis para o público escolhido?
 
 ## Localidade e período
 - **Localidade:** Caçapava (SP)
-- **Período:** 30 dias consecutivos (de 20/10/2026 a 20/11/2026)
+- **Período:** 30 dias consecutivos (de 20/10/2026 a 18/11/2026)
 
 ## Recorte do projeto
 - Uma localidade e trinta dias consecutivos
@@ -33,7 +33,7 @@ informações seriam úteis para o público escolhido?
 - Três indicadores (KPIs) e dois gráficos
 
 ## Perguntas analíticas
-1. Qual foi a temperatura máxima do período e em qual dia ocorreu?
+1. Qual foi a maior temperatura média diária registrada no período e em qual dia ocorreu?
 2. Quais foram os dias mais chuvosos?
 3. Existe relação entre a umidade e a precipitação?
 
