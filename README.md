@@ -58,7 +58,11 @@ observatorio-climatico/
 │   └── observatorio.duckdb
 └── docs/
     └── escopo-1/
-        └── AE1/
+        ├── AE1/
+        └── AE2-2/
+            ├── AE2_Observatorio_Climatico_Local.docx
+            ├── diagrama_fluxo_ae2.png
+            └── wireframe_dashboard_ae2.png
 ```
 
 ## Preparação do ambiente
