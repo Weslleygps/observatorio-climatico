@@ -127,13 +127,16 @@ A análise descreve o período selecionado e não constitui previsão meteoroló
 
 ## Status
 
+## Status
+
 - [x] Ambiente configurado.
-- [x] Repositório GitHub criado.
-- [ ] Coleta de dados.
-- [ ] Tratamento e validação.
-- [ ] Banco DuckDB.
-- [ ] Consultas SQL e indicadores.
-- [ ] Relatório técnico.
+- [x] Coleta de dados.
+- [x] Tratamento e validação.
+- [x] Banco DuckDB.
+- [x] Consultas SQL e indicadores.
+- [x] Relatório técnico da AE1.
+- [x] Planejamento técnico da AE2.
+- [ ] Implementação do dashboard em Streamlit.
 
 
       
