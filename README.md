@@ -130,3 +130,33 @@ A análise descreve o período selecionado e não constitui previsão meteoroló
 - [ ] Banco DuckDB.
 - [ ] Consultas SQL e indicadores.
 - [ ] Relatório técnico.
+
+
+      
+## AE2 – Desenho da solução
+
+Esta etapa apresenta o planejamento técnico do Observatório Climático Local.
+
+**Localidade:** Caçapava – SP
+
+**Período:** 20/10/2026 a 18/11/2026
+
+**Variáveis:**
+- Temperatura média diária (°C)
+- Precipitação diária (mm)
+- Umidade relativa média (%)
+
+**Tecnologias:**
+- Open-Meteo API
+- Python e Requests
+- pandas
+- DuckDB e SQL
+- Streamlit
+- GitHub
+
+**Documentação da AE2:**
+
+Os documentos, o diagrama do fluxo e o wireframe estão disponíveis em:
+
+`docs/escopo-1/AE2-2/`
+
